@@ -1,4 +1,9 @@
 // namaste js (Basics) 
+
+// note that here we are using var only.
+
+
+
 console.log(x)
 console.log(getName) // gives undefined as getName is a var in arrow functions.
 // getName()

@@ -46,6 +46,7 @@ console.log(!value ? "falsy":"truthy")
 // === vs ==
 console.log("=== vs ==");
 
+// === means value and type thats it.
 
 // note that there is a type conversion that is happening.
 console.log(1=='1')

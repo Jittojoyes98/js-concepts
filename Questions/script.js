@@ -158,4 +158,27 @@
 // [[...]] , just the zero'th index
 
 
+// misc
+// const sum = eval('10*10+5');
+// console.log(sum);
+
+
+// objects, thought this would give syntax error 
+
+// const obj = { a: 'one', b: 'two', a: 'three' };
+// console.log(obj);
+// it wont give syntax error , but a is replaced with the last
+// given value, but the position of a wont change("note").
+
+// keys in objects are converted to string by default.
+
+// const a = {};
+// const b = { key: 'b' };
+// const c = { key: 'c' };
+
+// a[b] = 123;
+// a[c] = 456;
+
+// console.log(a[b]);
+// when converted it gets into "[object Object]" and thus 2 times replaces.
 

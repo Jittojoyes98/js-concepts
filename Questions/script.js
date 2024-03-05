@@ -182,3 +182,25 @@
 // console.log(a[b]);
 // when converted it gets into "[object Object]" and thus 2 times replaces.
 
+/**
+ * object method create
+ * This method creates a prototype not just an instance,
+ * so if we delete any propery,
+ * it still have it from its inheritance 
+ * */ 
+
+// var Employee = {company:"xyz"}
+// var emp1 =Object.create(Employee);
+// emp1.company="abc";
+// delete emp1.company;
+// console.log(emp1.company); // xyz is still there
+// delete emp1.company;
+// console.log(emp1.company); // xyz is still there, this is called referenced
+
+// delete has no effect on variables  it has effect on object properties
+
+// var output = (function(x){
+//   delete x;
+//   return x;
+// })(0);
+// console.log(output)

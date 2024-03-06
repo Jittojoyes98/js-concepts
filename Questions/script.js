@@ -204,3 +204,20 @@
 //   return x;
 // })(0);
 // console.log(output)
+
+
+/**
+ * Type of
+ * FYI: typeof can return the following list of values: undefined, boolean, number, bigint, string,
+ *  symbol, function and object. Note that typeof null returns "object".
+ */
+
+/**
+ * array value for non-existant value, will give empty
+ */
+
+// const numbers = [1, 2, 3];
+// numbers[10] = 11;
+// console.log(numbers);
+
+

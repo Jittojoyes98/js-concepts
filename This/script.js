@@ -110,6 +110,78 @@
 // const newPerson=person1.method()
 // console.log(newPerson())
 
+/**
+ * @Namastejs
+ */
+
+// in the gobal scope 
+    // "use strict";
+
+// console.log(this) // in node its different.
+
+// // inside a function
+
+// function x(){
+//     console.log(this)
+// }
+// x();
+// window.x(); // it becomes window
+
+// inside the object
+
+// const obj={
+//     name:"Jitto",
+//     x:function(){
+//         console.log(this)
+//     }
+// }
+// obj.x();
+
+
+// bind,call, apply
+
+const std1={
+    mark:50,
+    x:function(){
+        console.log(this);
+    }
+}
+
+const std2={
+    mark:54,
+}
+
+std1.x.call(std2) // now here we are calling x with another object as a refernce
+// std2 is the reference here
+
+// within an arrow function
+
+const user={
+    name:"Deepthi",
+    x:()=>{
+        console.log(this) // it gives window
+    }
+}
+user.x()
+
+const userNested={
+    name:"Bhasha",
+    say:function (){
+        // console.log(this); // similar
+        const x=()=>{
+            console.log(this) // here this refers to enclosing scopes's
+        }
+        x();
+    }
+}
+
+userNested.say() 
+
+
+
+
+
+
 
 
 

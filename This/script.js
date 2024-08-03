@@ -29,20 +29,20 @@
 
 // if we want to use a function along with a object context then we
 //  need to use bind,apply or call
-// function getDetails(){
-//     console.log(this.age);
-//     console.log(this.name);
-// }
+function getDetails(){
+    console.log(this.age);
+    console.log(this.name);
+}
 
-// const person={
-//     name:"Jitto",
-//     age:23,
-// }
+const person={
+    name:"Jitto",
+    age:23,
+}
 
 // getDetails.call(person) // calls the function
 // getDetails.apply(person) // calls the function
-// const returnedFunction= getDetails.bind(person); // returns a function
-// returnedFunction()
+const returnedFunction= getDetails.bind(person); // returns a function
+returnedFunction()
 
 // function getSum(x,y,z){
 //     console.log(this.age);

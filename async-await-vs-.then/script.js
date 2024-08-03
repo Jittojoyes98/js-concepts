@@ -22,13 +22,13 @@ const p=new Promise((resolved,rejected)=>{
     }, 10000);
 })
 
-const p1=new Promise((resolved,rejected)=>{
+const p2=new Promise((resolved,rejected)=>{
     setTimeout(() => {
         resolved("The promise is resolved")
     },10000);
 })
 
-const p2=new Promise((resolved,rejected)=>{
+const p1=new Promise((resolved,rejected)=>{
     setTimeout(() => {
         resolved("The promise is resolved")
     }, 5000);
@@ -64,6 +64,9 @@ const handlePromise=async()=>{
 }
 
 handlePromise()
+setTimeout(() => {
+    console.log("after timeout")
+}, 5000);
 
 
 

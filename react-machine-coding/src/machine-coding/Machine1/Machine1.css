@@ -1,0 +1,39 @@
+.node {
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgb(211, 127, 127);
+  color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.node > p {
+  cursor: pointer;
+}
+.draggable {
+  cursor: move;
+}
+.white {
+  background-color: white;
+}
+.black {
+  background-color: black;
+}
+.row {
+  display: flex;
+}
+.selected {
+  background-color: yellow;
+  opacity: 0.6;
+}
+.move {
+  background-color: green;
+  opacity: 0.6;
+}
+.kill {
+  background-color: red;
+  opacity: 0.6;
+}
+.drag-over {
+  background-color: beige;
+}
